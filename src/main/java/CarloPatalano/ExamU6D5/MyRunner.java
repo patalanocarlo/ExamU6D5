@@ -97,7 +97,7 @@ public class MyRunner implements CommandLineRunner {
             System.out.println("Errore durante la creazione della prenotazione: " + e.getMessage() );
         }
         TipoPostazione tipoPostazione = TipoPostazione.OPENSPACE;
-        String citta = "Ischia";
+        String citta = "Ischia"; //IMPOSTAZIONE da cercare
 
         List<Postazione> postazioni = postazioneRepository.findByTipoPostazioneAndCitta(tipoPostazione, citta);
         System.out.println("Postazioni trovate per tipo " + tipoPostazione + " e città " + citta + ":");

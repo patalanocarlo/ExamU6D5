@@ -10,6 +10,6 @@ import java.time.LocalDate;
 import java.util.List;
 
 public interface PrenotazioneRepository extends JpaRepository  <Prenotazione,Long> {
-    List<Prenotazione> findByPostazioneAndData(Postazione postazione, LocalDate data);
-    List<Prenotazione> findByUtenteAndData(Utente utente, LocalDate data);
+    List<Prenotazione> findByPostazioneAndDate(Postazione postazione, LocalDate date); // Corretto 'Data' -> 'Date'
+    List<Prenotazione> findByUtenteAndDate(Utente utente, LocalDate date); // Corretto 'Data' -> 'Date'
 }

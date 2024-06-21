@@ -33,4 +33,5 @@ public class Prenotazione {
         this.postazione = postazione;
         this.utente = utente;
     }
+
 }
